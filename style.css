@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(49, 115, 72);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(249, 249, 249);
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+     font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.total-expenses, .average-expense {
+    text-align: center;
+}
+
+.total-expenses p, .average-expense p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0080ff;
+}
+
+.expenses-list {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+.expenses-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expenses-list ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.expenses-list ul li:before {
+    content: "•";
+    margin-right: 5px;
+}
+.partition-line {
+    height: 2px; /* Adjust the height of the partition line */
+    background-color: #ccc; /* Adjust the color of the partition line */
+    margin: 10px auto; /* Adjust the margin to center the line */
+    width: 50%; /* Adjust the width of the line */
+}
+.containers {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #408080;
+    color: #0f0f0f;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounce 0.5s infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    100% {
+        transform: translateY(-10px); /* Bounce up */
+    }
+}
